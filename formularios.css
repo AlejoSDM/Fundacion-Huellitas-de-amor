@@ -1,0 +1,124 @@
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #FF6F91;
+}
+
+#formulario {
+    font-size: 50px;
+}
+#formulario label {
+    font-size: 40px;
+}
+
+#formu input{
+    width: 90%;
+    padding: 12px;
+    border: groove;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+#formulario input:hover{
+    background-color:#FF6F91;
+    transform: scale(1.05);
+}
+
+#formu {
+    display: flex;
+    justify-content:center;
+    margin: 45px auto;
+    width: 35%;
+    background-color: #E8F5E9;
+    box-shadow: 0 4px 15px black;
+    padding: 30px;
+    border-radius: 50px;
+}
+#formu p{
+    font-size: 40px;
+}
+#formu:hover{
+    transform: translateY(-5px);
+}
+#genero {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-item{
+    font-size: 16px;
+}
+
+@media (max-width: 1024px){
+
+    #formu{
+        width: 80%;
+    }
+
+
+    h2{
+        font-size: 55px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    #formu{
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    
+    #formulario label{
+        font-size: 20px;
+    }
+
+    #genero{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #Enviar input{
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}

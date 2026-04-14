@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="donaciones.css">
+</head>
+<body>
+<section id="formulario">
+    <h2>Formulario de Donación</h2>
+
+    <div id="formu">
+        <form action="/tabla.html" method="post">
+
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+            <br>
+            <label>Apellidos:</label>
+            <input type="text" name="apellidos" required>
+            <br>
+            <label>Ciudad:</label>
+            <input type="text" name="ciudad">
+            <br>
+            <label>Correo:</label>
+            <input type="email" name="correo" placeholder="Ingrese su correo" required>
+            <br>
+            <label>Número Telefónico:</label>
+            <input type="tel" name="telefono">
+            <br>
+            <label>Tipo de donación:</label>
+            <select name="tipo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="dinero">Dinero</option>
+                <option value="alimentos">Alimentos</option>
+                <option value="insumos">Insumos</option>
+            </select>
+
+             <br>
+            <label>Monto (si es dinero):</label>
+            <input type="number" name="monto" placeholder="$">
+            <br>
+            <div id="donar">
+            <input type="submit" value="Donar">
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-item">
+            <h3>Huellitas de Amor</h3>
+        </div>
+
+        <div class="footer-item">
+            <p>© 2026 Todos los derechos reservados</p>
+        </div>
+
+        <div class="footer-item">
+            <p>📧 contacto@huellitasdeamor.com</p>
+        </div>
+
+        <div class="footer-item">
+            <p>Desarrollado por Equipo DevPets</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

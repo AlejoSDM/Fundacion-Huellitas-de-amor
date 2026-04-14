@@ -1,0 +1,92 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#E8F5E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.perfil{
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.perfil:hover{
+    transform: translateY(-5px);
+}
+
+.perfil h2{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4CAF50;
+    font-size: 28px;
+}
+
+.perfil img{
+    width: 70%;
+    height: 250px;
+    margin-left: 15%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.perfil h3{
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 3px;
+}
+
+.perfil p{
+    color: #555;
+    font-size: 15px;
+}
+
+.perfil button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.perfil button:hover{
+    background-color: #FF6F91;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px){
+
+    .perfil{
+        width: 60%;
+    }
+
+}@media (max-width: 600px){
+
+    .perfil{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .perfil h2{
+        font-size: 22px;
+    }
+
+    .perfil p{
+        font-size: 14px;
+    }
+
+}

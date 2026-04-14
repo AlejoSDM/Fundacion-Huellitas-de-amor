@@ -1,0 +1,148 @@
+article img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+article{
+    text-align: center;
+    background-color:#E8F5E9;
+    box-shadow: 0 4px 15px black;
+    border-radius: 5%;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+article:hover{
+    transform: translateY(-5px);
+}
+
+#Ad {
+    width: 90%;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+h4{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h3{
+    font-family: 'Comic Neue', cursive;
+}
+
+h2{
+    font-style: italic;
+    text-align: center;
+    margin-top: 0%;
+    font-size:80px;
+    color: #4CAF50;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+
+    border-radius: 20px;
+    background-color: #E8F5E9;
+    box-shadow: 0 7px 15px black;
+}
+
+#logo img{
+    width: 40%;
+    height: auto;
+    margin: 0;
+    
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color:#FF6F91;
+    transform: scale(1.05);
+}
+
+.footer{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-item{
+    font-size: 16px;
+}
+
+/*ipad*/
+@media (max-width: 1024px){
+
+    #Ad{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    article img{
+        height: 300px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+}
+
+/*celular*/
+@media (max-width: 600px){
+
+    #Ad{
+        grid-template-columns: 1fr
+        }
+
+    article img{
+        height: 200px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    #logo{
+        flex-direction:column;
+        text-align: center;
+    }
+
+    #logo img{
+        width: 80%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+}

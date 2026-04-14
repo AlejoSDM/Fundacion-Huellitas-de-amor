@@ -1,0 +1,147 @@
+h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 70px;
+    color: #FF6F91;
+}
+
+#formulario {
+    width:100%;
+    text-align: center;
+}
+
+#formulario label {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+#formulario input{
+    text-align: center;
+    width: 80%;
+    padding: 12px;
+    border: groove;
+    border-radius: 10px;
+    background-color: #ecf7ed;
+    font-size: 18px;
+    cursor:pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+#formulario input:hover{
+    background-color:#FF6F91;
+    transform: scale(1.02);
+}
+
+#formu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px auto;
+    width: 30%;
+    background-color: #E8F5E9;
+    box-shadow: 0 4px 15px black;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+#formu:hover{
+    transform: translateY(-5px);
+}
+
+select {
+    width: 84%;
+    padding: 12px;
+    border: groove;
+    border-radius: 10px;
+    background-color: #E8F5E9;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+select:hover{
+    background-color:#FF6F91;
+    transform: scale(1.05);
+}
+
+#donar{
+    margin-top: 40px;
+}
+
+.footer{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-item{
+    font-size: 16px;
+}
+
+@media (max-width: 1024px){
+    #formu{
+        width: 60%;
+    }
+
+    h2{
+        font-size: 55px;
+    }
+
+    input{
+        margin-top: 30px;
+    }
+
+    select{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    #formu{
+        width: 80%;
+        padding: 20px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    #formulario label{
+        font-size: 20px;
+    }
+
+    input{
+        margin-top: 30px;
+    }
+
+    select{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}
