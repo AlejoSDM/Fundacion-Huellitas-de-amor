@@ -1,6 +1,6 @@
 article img{
     width: 100%;
-    height: 250px;
+    height: 450px;
     object-fit: cover;
     border-radius: 5%;
 }
@@ -55,11 +55,16 @@ h2{
     box-shadow: 0 7px 15px black;
 }
 
-#logo img{
-    width: 40%;
+#logoimg{
+
+    border-radius: 60%;
+    width: 500px;
     height: auto;
     margin: 0;
-    
+}
+
+#linkimagen{
+    border-radius: 60%;
 }
 
 button{

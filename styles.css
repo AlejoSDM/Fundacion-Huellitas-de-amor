@@ -228,6 +228,7 @@ svg{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0% 25%;
+    gap: 20px;
     padding: 10px;
 }
 #collage img {
@@ -256,6 +257,7 @@ svg{
     text-align: center;
     font-family: 'Baloo 2', cursive;
     color:#4CAF50;
+    font-size: 45px;
 }
 
 .footer{
@@ -356,12 +358,12 @@ svg{
 
     #collage{
         grid-template-columns: repeat(2, 1fr);
-        margin: 0px 100%; 
+        margin: auto; 
     }
 
     #collage img{
         margin: 0;
-        height: 200px;
+        height: 400px;
         object-fit: cover;
     }
 
@@ -421,6 +423,12 @@ svg{
 
     #collage{
         grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    #collage img{
+        max-width: max-content;
+        max-height: max-content;
     }
 
     #img1{
